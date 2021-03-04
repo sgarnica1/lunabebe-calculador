@@ -1,0 +1,140 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #C6EFE9;
+}
+
+.lb_calculator_container {
+  width: 90%;
+  max-width: 370px;
+  height: auto;
+  padding: 30px 20px;
+  background-color: #F6FAFB;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lb_calculator_container .lb_calculator_title {
+  color: #365A6E;
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.lb_calculator_container .lb_calculator_divider {
+  border-top: 0px;
+  border-bottom: 1px solid #72c8c3;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.lb_calculator_container .lb_calculator_multiple_option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto 20px auto;
+}
+.lb_calculator_container .lb_calculator_multiple_option .multiple_option_input_container label{
+  color: #627A86;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.lb_calculator_container .lb_calculator_multiple_option .multiple_option_input_container input::after{
+  width: 18px;
+  height: 18px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #F6FAFB;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #9EBECF;
+  cursor: pointer;
+}
+.lb_calculator_container .lb_calculator_multiple_option .multiple_option_input_container input:checked:after{
+  width: 18px;
+  height: 18px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #F88787;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid white;
+}
+.lb_calculator_container .lb_calculator_select {
+  width: 95%;
+}
+.lb_calculator_container .lb_calculator_select span{
+  color: #627A86;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+.lb_calculator_container .lb_calculator_select .lb_calculator_select_container{
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.lb_calculator_container .lb_calculator_select .lb_calculator_select_container input, .lb_calculator_container .lb_calculator_select .lb_calculator_select_container select{
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #95BACE;
+  height: 30px;
+  color: #365A6E;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.lb_calculator_container .lb_calculator_select .lb_calculator_select_container input {
+  width: 40%;
+}
+.lb_calculator_container .lb_calculator_select .lb_calculator_select_container select {
+  width: 20%;
+  cursor: pointer;
+}
+.lb_calculator_container .lb_calculator_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #00B6AE;
+  border-radius: 20px;
+  width: 95%;
+  outline: none;
+  height: 50px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+}
+.lb_calculator_container .lb_calculator_button:hover {
+  background-color: #07948d;
+}
+.lb_calculator_container .lb_calculator_result_message {
+  color: #FE7865;
+  font-weight: 500;
+  font-size: 16px;
+}
