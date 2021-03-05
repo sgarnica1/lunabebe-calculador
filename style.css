@@ -108,6 +108,10 @@ main {
 .lb_calculator_container .lb_calculator_select .lb_calculator_select_container input {
   width: 40%;
 }
+.lb_calculator_container .lb_calculator_select .lb_calculator_select_container input:focus, .lb_calculator_container .lb_calculator_select .lb_calculator_select_container select:focus {
+  border: 1px solid #365A6E;
+  border-radius: 20px;
+}
 .lb_calculator_container .lb_calculator_select .lb_calculator_select_container select {
   width: 20%;
   cursor: pointer;
@@ -134,6 +138,7 @@ main {
   background-color: #07948d;
 }
 .lb_calculator_container .lb_calculator_result_message {
+  display: none;
   color: #FE7865;
   font-weight: 500;
   font-size: 16px;

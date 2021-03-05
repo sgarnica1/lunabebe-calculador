@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculador de tallas</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="./app.js"></script>
+  <script defer src="./index.js"></script>
 </head>
 <body>
   <main>
@@ -30,35 +30,37 @@
       <div class="lb_calculator_select size">
         <span>Talla antes del embarazo</span>
         <div class="lb_calculator_select_container size">
-          <input type="number" name="size_value" id="lb_calculator_size_value">
+          <input type="number" name="size_value" id="lb_calculator_size_value" value="">
           <select name="size_unit" id="lb_calculator_size_unit">
-            <option value="">us</option>
+            <option value="mx">mx</option>
+            <option value="us">us</option>
+            <option value="eu">eu</option>
           </select>
         </div>
       </div>
       <div class="lb_calculator_select height">
         <span>Altura</span>
         <div class="lb_calculator_select_container height">
-          <input type="number" name="height_value" id="lb_calculator_height_value">
+          <input type="number" name="height_value" id="lb_calculator_height_value" value="">
           <select name="height_unit" id="lb_calculator_height_unit">
-            <option value="">cm</option>
-            <option value="">m</option>
-            <option value="">in</option>
-            <option value="">ft</option>
+            <option value="centimeters">cm</option>
+            <option value="meters">m</option>
+            <option value="inches">in</option>
+            <option value="feet">ft</option>
           </select>
         </div>
       </div>
       <div class="lb_calculator_select weight">
         <span>Peso antes de embarazo</span>
         <div class="lb_calculator_select_container weight">
-          <input type="number" name="weight_value" id="lb_calculator_weight_value">
-          <select name="weight_unit" id="lb_calculator_weigth_unit">
-            <option value="kg">kg</option>
-            <option value="lb">lb</option>
+          <input type="number" name="weight_value" id="lb_calculator_weight_value" value="">
+          <select name="weight_unit" id="lb_calculator_weight_unit">
+            <option value="kilograms">kg</option>
+            <option value="pounds">lb</option>
           </select>
         </div>
       </div>
-      <button class="lb_calculator_button">Calcular mi talla</button>
+      <button class="lb_calculator_button" id="lb_calculator_button" value="calculate">Calcular mi talla</button>
       <hr class="lb_calculator_divider">
       <span class="lb_calculator_result_message">Tu talla de Baby K'tan es: 
         <strong class="lb_calculator_result_value">M</strong>
